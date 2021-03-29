@@ -1,0 +1,48 @@
+.movieimg{
+    display:flex;
+    flex-direction:column;
+    width:200px;
+    margin:4px 0;
+    padding:4px;
+    background-color: #d62828;
+    border-radius:10px ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    position:relative;
+
+}
+
+
+.movieimg:hover{
+    /* background-color:#ffe8d6; */
+    background-color: #ffadad;
+    color:#e63946;
+    text-transform: uppercase;
+    
+
+    
+}
+
+
+.maintitle{
+    width:100%;
+    padding:7px 0;
+    font-size:16px;
+    text-align:center;
+
+
+
+}
+.movieposter{
+    border-radius: 10px;
+}
+
+
+
+.movieTitle{
+    display:flex;
+    justify-content:space-between;
+    padding-bottom:4px;
+    padding:0 5px;
+    
+}
+

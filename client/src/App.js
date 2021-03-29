@@ -1,28 +1,35 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Books from "./pages/Books";
-import Detail from "./pages/Detail";
-import NoMatch from "./pages/NoMatch";
-import Nav from "./components/Nav";
+import { Container } from "@material-ui/core"
+// import {BrowserRouter} from "react-router-dom"
+import './App.css';
+import Header from "./components/Header/Header"
+import SimpleBottomNavigation from "./components/BottomNavbar"
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+// import { Favorite } from '@material-ui/icons';
+import Trending from "./Pages/Trending/Trending"
+import Movies from "./Pages/Movies/Movies"
+import Search from "./Pages/Search/Search"
+import Favourite from "./Pages/Favourite/Favourite"
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Nav />
-        <Switch>
-          <Route exact path={["/", "/books"]}>
-            <Books />
-          </Route>
-          <Route exact path="/books/:id">
-            <Detail />
-          </Route>
-          <Route>
-            <NoMatch />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <>
+      <BrowserRouter>
+        <Header />
+        <div className="app">
+          <Container>
+            <Switch>
+              <Route path="/" component={Trending} exact />
+              <Route path="/movies" component={Movies} />
+              <Route path="/favourite" component={Favourite} />
+              <Route path="/search" component={Search} />
+            </Switch>
+          </Container>
+
+
+        </div>
+        <SimpleBottomNavigation />
+      </BrowserRouter>
+    </>
   );
 }
 

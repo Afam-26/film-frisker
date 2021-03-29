@@ -1,0 +1,58 @@
+.trendingimg{
+    display:flex;
+    flex-direction:column;
+    width:200px;
+    margin:4px 0;
+    padding:4px;
+    background-color: #cb997e;
+    border-radius:10px ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    position:relative;
+
+}
+
+
+.trendingimg:hover{
+    /* background-color:#ffe8d6; */
+    background-color: transparent;
+    color:#6b705c;
+    
+
+    
+}
+
+
+.title{
+    width:100%;
+    padding:7px 0;
+    font-size:16px;
+    text-align:center;
+
+
+
+}
+.poster{
+    border-radius: 10px;
+}
+
+
+
+.secTitle{
+    display:flex;
+    justify-content:space-between;
+    padding-bottom:4px;
+    padding:0 5px;
+    
+}
+
+/* .secTitle:hover{
+    text-transform: capitalize;
+    color: 
+    font-weight: bolder;
+} */
+
+@media(max-width:500px){      /*less than*/
+    .trendingimg{
+        width:46px;
+    }
+    }
