@@ -1,4 +1,4 @@
-
+import React from "react";
 import axios from "axios";
 import {useEffect, useState} from "react";
 import  MovieContentPage from "../../components/MovieContentPage/MovieContentPage"
