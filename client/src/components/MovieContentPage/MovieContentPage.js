@@ -1,3 +1,5 @@
+import React from "react";
+
 import  "./MovieContentPage.css";
 import {Badge} from "@material-ui/core"
 
