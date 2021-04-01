@@ -27,7 +27,7 @@ export default function SimpleBottomNavigation() {
 
   // creating use-effect , it fires everytime when the value(defined with setValue) changes.
 
-  useEffect(()=>{                        // with node.js (req.path)push(path, [state]) - (function) Pushes a new entry onto the history stack
+  useEffect(()=>{                        
       if(value===0)history.push("/")                 // can use the history methods outside of your components
       else if(value===1)history.push("/movies")           //Change your current location from any place, 
       else if(value===2)history.push("/favourite")
