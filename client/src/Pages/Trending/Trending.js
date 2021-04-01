@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-// const TMDB_API_KEY  = '8e722ae88eef6ce2381eb052bc2d2b29'
+
 
 import axios from "axios"
 import  Content from "../../components/Content/Content"
