@@ -22,7 +22,7 @@ const MovieContentPage=({
             <Badge badgeContent={vote_average}  color="primary"/>
             <img className="movieposter" src={`${baseURL}${pictureSize}${poster}`}/>
 
-            <p classname="maintitle">{title} </p>
+            <p className="maintitle">{title} </p>
             <span className="movieTitle">
             {popularity}<br/>
             <span>{date}</span>
