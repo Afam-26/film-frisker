@@ -42,7 +42,9 @@
   scroll-behavior: smooth;     /*smooth scrolling of page*/
 }
 
-
+.search:focus {
+  outline: none;
+}
 
 .app{
   min-height:100vh;
