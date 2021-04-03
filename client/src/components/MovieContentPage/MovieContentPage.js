@@ -22,10 +22,10 @@ const MovieContentPage=({
 
 
             <span className="movieTitle">
-            {popularity}<br/>
-            <span>{date}</span>
+            {/* {popularity}<br/>
+            <span>{date}</span> */}
             
-            </span> */}
+            </span>
         </div>
     )
 }
