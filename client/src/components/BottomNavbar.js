@@ -12,10 +12,11 @@ import {useHistory} from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
-    width: "100%" ,
+    width: "100%",
+    height: "20%",
     position:"fixed",
     bottom:0,
-    backgroundColor:"",
+    backgroundColor:"black",
     zIndex:100,
   },
 });
@@ -44,13 +45,10 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="Trending" style={{color:"blue"}} icon={<WhatshotIcon />} />
-     
-      <BottomNavigationAction label="Movie" icon={<MovieIcon />} /> 
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Search" icon={<SearchIcon />} />  
-
-      
+      <BottomNavigationAction label="Trending" style={{color:"white"}} icon={<WhatshotIcon />} />
+      <BottomNavigationAction label="Movie" style={{color:"white"}} icon={<MovieIcon />} /> 
+      <BottomNavigationAction label="Favorites" style={{color:"white"}} icon={<FavoriteIcon />} />
+      <BottomNavigationAction label="Search" style={{color:"white"}} icon={<SearchIcon />} />  
     </BottomNavigation>
   );
 }

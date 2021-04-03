@@ -1,12 +1,10 @@
 import React from "react";
-
 import  "./MovieContentPage.css";
 import {Badge} from "@material-ui/core"
 
 
 const baseURL = 'https://image.tmdb.org/t/p/'
      const pictureSize = 'w300'
-
 
 const MovieContentPage=({
     id,
@@ -22,19 +20,12 @@ const MovieContentPage=({
             <Badge badgeContent={vote_average}  color="primary"/>
             <img className="movieposter" src={`${baseURL}${pictureSize}${poster}`}/>
 
-            <p classname="maintitle">{title} </p>
+            {/* <p classname="maintitle">{title} </p>
             <span className="movieTitle">
             {popularity}<br/>
             <span>{date}</span>
             
-            </span>
-
-
-
-          
-            
-            
-    
+            </span> */}
         </div>
     )
 }
