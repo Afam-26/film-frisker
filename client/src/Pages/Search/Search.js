@@ -1,9 +1,8 @@
-
-import React from "react";
-import { useEffect, useState } from "react";
-import MovieContentPage from "../../components/MovieContentPage/MovieContentPage"
+import React from “react”;
+import { useEffect, useState } from “react”;
+import MovieContentPage from “../../components/MovieContentPage/MovieContentPage”
 function Search() {
-    const [searchValue, setSearchValue] = useState("");
+    const [searchValue, setSearchValue] = useState(“”);
     const [movieContent, setMovieContent] = useState([]);
     // const darkTheme=createMuiTheme({
     //     palette:{
@@ -25,7 +24,7 @@ const handleSubmit = (e) => {
         .then((data) => {
             setMovieContent(data.results);
         });
-    setSearchValue("");
+    setSearchValue(“”);
 };
 const handleChange = (e) => {
     setSearchValue(e.target.value);
@@ -33,15 +32,15 @@ const handleChange = (e) => {
 return (
     <>
         <form onSubmit={handleSubmit}>
-            <input style={{width:"100%",borderRadius:"50px", marginTop:"10px", padding:"20px" , raduis:"50px", marginLeft:"5px",color:"#F94144",backgroundColor:"#D8E2DC"}}
-                className="search"
-                type="search"
-                placeholder="Search for movies and press Enter"
+            <input style={{width:“100%“,borderRadius:“50px”, marginTop:“10px”, padding:“20px” , raduis:“50px”, marginLeft:“5px”,color:“#F94144",backgroundColor:“#D8E2DC”}}
+                className=“search”
+                type=“search”
+                placeholder=“Search for movies and press Enter”
                 value={searchValue}
                 onChange={handleChange}
             />
         </form>
-        <div className="trending" >
+        <div className=“trending” >
                     {movieContent.map((value)=>(
                         <MovieContentPage key={value.id}
                                   id={value.id}
