@@ -13,6 +13,10 @@
   color:#c6d828;
 }
 
+.search:focus {
+  outline: none;
+}
+
 .app{
   min-height:100vh;
   background-image: -webkit-linear-gradient(#a9a9b9, #050505);
