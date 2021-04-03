@@ -1,26 +1,40 @@
 .trendingimg{
-    display:flex;
+    /* display:flex;
     flex-direction:column;
     width:200px;
     margin:4px 0;
     padding:4px;
-    background-color: #cb997e;
+    background-color: #3d3b46;
     border-radius:10px ;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    position:relative; */
+    display:flex;
+    flex-direction:row;
+    width:200px;
+    height: 300px;
+    margin:15px;
+    padding:4px;
+    border-radius:20px ;
+    font-family:'Times New Roman', Times, serif;
     position:relative;
+    -moz-box-shadow: 0 0 10px #e9e8f1; 
+    -webkit-box-shadow: 0 0 10px #d6d6eb;
+    box-shadow: 0 0 10px #ecedf3;
 
 }
 
+.trending{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    
+}
 
 .trendingimg:hover{
-    /* background-color:#ffe8d6; */
-    background-color: transparent;
-    color:#6b705c;
-    
-
-    
+    background-color: #a9b9c0;
+    color:#f2edf3;
+    text-transform: uppercase;
 }
-
 
 .title{
     width:100%;
@@ -28,14 +42,10 @@
     font-size:16px;
     text-align:center;
 
-
-
 }
 .poster{
     border-radius: 10px;
 }
-
-
 
 .secTitle{
     display:flex;

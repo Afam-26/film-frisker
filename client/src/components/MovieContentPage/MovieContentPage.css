@@ -1,48 +1,40 @@
+
+
 .movieimg{
     display:flex;
-    flex-direction:column;
+    flex-direction:row;
     width:200px;
-    margin:4px 0;
+    height: 300px;
+    margin:15px;
     padding:4px;
-    background-color: #d62828;
-    border-radius:10px ;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    border-radius:20px ;
+    font-family:'Times New Roman', Times, serif;
     position:relative;
-
+    -moz-box-shadow: 0 0 10px #e9e8f1; 
+    -webkit-box-shadow: 0 0 10px #d6d6eb;
+    box-shadow: 0 0 10px #ecedf3;
 }
-
 
 .movieimg:hover{
-    /* background-color:#ffe8d6; */
-    background-color: #ffadad;
-    color:#e63946;
+    background-color: #a9b9c0;
+    color:#f2edf3;
     text-transform: uppercase;
-    
-
-    
 }
-
 
 .maintitle{
     width:100%;
     padding:7px 0;
-    font-size:16px;
+    font-size:5px;
     text-align:center;
-
-
-
 }
 .movieposter{
     border-radius: 10px;
 }
-
-
 
 .movieTitle{
     display:flex;
     justify-content:space-between;
     padding-bottom:4px;
     padding:0 5px;
-    
 }
 
