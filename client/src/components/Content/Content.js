@@ -1,5 +1,12 @@
 
 import React from "react";
+
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import IconButton from '@material-ui/core/IconButton';
+import "../AddFavorite.js"
+import addFave from "../AddFavorite.js";
+
+
 import  "./Content.css";
 
 const baseURL = 'https://image.tmdb.org/t/p/'
@@ -24,7 +31,7 @@ const Content=({
 
 
 
-            <p classname="title">{title} </p>
+            <p className="title">{title} </p>
             
             
     

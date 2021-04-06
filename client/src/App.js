@@ -11,6 +11,9 @@ import Favourite from "./Pages/Favourite/Favourite"
 
 function App() {
 
+  const addFave = e => {
+
+  }
 
   const onSearchMovies = e => {
     e.preventDefault();
@@ -27,7 +30,7 @@ function App() {
             <Switch>
               <Route path="/" component={Trending} exact />
               <Route path="/movies" component={Movies} />
-              <Route path="/favourite" component={Favourite} />
+              <Route path="/favourite" component={Favourite} addFave={addFave}/>
               <Route path="/search" component={Search} onSearchMovies={onSearchMovies}/>
             </Switch>
           </Container>
