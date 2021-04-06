@@ -29,6 +29,14 @@ z-index: 100; */
     color:#dddbe9;
     z-index: 100;
 
+    
+}
+
+.header-image{
+    margin-top: 1rem;
+
+
+
 }
 
 @media(max-width:1100px){
