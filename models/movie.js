@@ -3,9 +3,11 @@ const Schema = mongoose.Schema;
 
 const movieSchema = new Schema({
   title: { type: String, required: true },
-  author: { type: String, required: true },
-  synopsis: String,
-  date: { type: Date, default: Date.now }
+  poster: { type: String, required: true },
+  body: String,
+  date: { type: Date, default: Date.now },
+  popularity: String,
+  vote_average: String
 });
 
 const Movie = mongoose.model("Movie", movieSchema);

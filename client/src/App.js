@@ -1,12 +1,9 @@
 import React from "react";
-
-import { Container } from "@material-ui/core"
-// import {BrowserRouter} from "react-router-dom"
+import { Container } from "@material-ui/core";
 import './App.css';
 import Header from "./components/Header/Header"
 import SimpleBottomNavigation from "./components/BottomNavbar"
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-// import { Favorite } from '@material-ui/icons';
 import Trending from "./Pages/Trending/Trending"
 import Movies from "./Pages/Movies/Movies"
 import Search from "./Pages/Search/Search"
@@ -14,6 +11,9 @@ import Favourite from "./Pages/Favourite/Favourite"
 
 function App() {
 
+  const addFave = e => {
+
+  }
 
   const onSearchMovies = e => {
     e.preventDefault();
@@ -30,7 +30,7 @@ function App() {
             <Switch>
               <Route path="/" component={Trending} exact />
               <Route path="/movies" component={Movies} />
-              <Route path="/favourite" component={Favourite} />
+              <Route path="/favourite" component={Favourite} addFave={addFave}/>
               <Route path="/search" component={Search} onSearchMovies={onSearchMovies}/>
             </Switch>
           </Container>
