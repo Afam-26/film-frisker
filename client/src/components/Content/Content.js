@@ -2,6 +2,7 @@
 import React from "react";
 
 import  "./Content.css";
+import  InfoModal from "../../components/InfoModal/InfoModal"
 
 
 
@@ -19,23 +20,24 @@ const Content=({
     date,
 })=>{
     return(
-        <div className="trendingimg">
+        
+             <InfoModal media_type={media_type} id={id}>
               
 
             <img className="poster" src={`${baseURL}${pictureSize}${poster}`}/>
             <span className="secTitle">
             {media_type ==="tv" ? "TV Series" : "Movie"}<br/>
-            <span></span>{date}
+             <span></span>{date} 
             
             </span>
 
 
 
-            <p classname="title">{title} </p>
+             <p classname="title">{title} </p> 
             
             
     
-        </div>
+        </InfoModal>
     )
 }
 

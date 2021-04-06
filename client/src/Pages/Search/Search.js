@@ -34,6 +34,9 @@ function Search() {
 
 const handleSubmit = (e) => {
     e.preventDefault();
+
+    if(searchValue){
+
     fetch(SEARCH_API + searchValue)
         .then((res) => res.json())
         .then((data) => {
@@ -42,11 +45,14 @@ const handleSubmit = (e) => {
     setSearchValue("");
 };
 
+}
+
 
 const handleChange = (e) => {
     setSearchValue(e.target.value);
 
 }
+
 
 return (
     <>
@@ -64,8 +70,9 @@ return (
                     {movieContent.map((value)=>(
                         <MovieContentPage key={value.id}
                                   id={value.id}
-                                  poster={value.poster_path}
+                                  poster={value.poster_path ? value.poster_path:"https://images.unsplash.com/photo-1572177191856-3cde618dee1f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=282&q=80"}
                                   title={value.title}
+                                
                                   date={value.release_date || value.first_air_date}
                                   popularity={value.popularity}
                                   vote_average={value.vote_average}
