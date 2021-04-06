@@ -2,10 +2,16 @@
 
 .movieimg{
     display:flex;
+
+/*     flex-direction:column;
+    width:210px;
+    margin:4px 0; */
+
     flex-direction:row;
     width:200px;
     height: 300px;
     margin:15px;
+
     padding:4px;
     border-radius:20px ;
     font-family:'Times New Roman', Times, serif;
@@ -36,5 +42,11 @@
     justify-content:space-between;
     padding-bottom:4px;
     padding:0 5px;
+}
+
+.heart {
+    position: absolute;
+    left: 15px;
+    top: 15px;
 }
 
