@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import  Content from "../../components/Content/Content"
@@ -29,11 +30,13 @@ function Favourite() {
                     <Content key={value.id}
                         id={value.id}
                         poster={value.poster}
-                        title={value.title || value.name}
-                        date={value.release_date || value.first_air_date}
-                        media_type={value.media_type} />
+//                         title={value.title || value.name}
+//                         date={value.release_date || value.first_air_date}
+//                         media_type={value.media_type} 
+      />
                 ))}
             </div>
+
         </>
     )
 
