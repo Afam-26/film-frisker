@@ -1,5 +1,4 @@
 import React from "react";
-
 import  "./MovieContentPage.css";
 import { Badge } from "@material-ui/core"
 import FavoriteIcon from '@material-ui/icons/Favorite';
@@ -9,7 +8,6 @@ import axios from "axios";
 
 const baseURL = 'https://image.tmdb.org/t/p/';
 const pictureSize = 'w300';
-
 
 
 const MovieContentPage=({
@@ -45,19 +43,12 @@ const MovieContentPage=({
             </IconButton>
             
             <img className="movieposter" src={`${baseURL}${pictureSize}${poster}`}/>
-            <p className="maintitle">{title} </p>
+
             <span className="movieTitle">
-            {popularity}<br/>
-            <span>{date}</span>
+            {/* {popularity}<br/>
+            <span>{date}</span> */}
             
             </span>
-
-
-
-          
-            
-            
-    
         </div>
     )
 }

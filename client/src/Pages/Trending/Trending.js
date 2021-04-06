@@ -1,15 +1,50 @@
 
 import React, { useState, useEffect } from 'react';
-// const TMDB_API_KEY  = '8e722ae88eef6ce2381eb052bc2d2b29'
 
 import axios from "axios"
-import  Content from "../../components/Content/Content"
-import "./Trending.css"
+import Content from "../../components/Content/Content"
+// import "./Trending.css"
 
 
 function Trending() {
+    const [trendingdata, setTrendingData] = useState([])
 
-    // const [movies, setMovies] = useState([])
+    // destructing the {data}
+    const getTrending = async () => {
+        const { data } = await axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_API_KEY}`
+        );
+
+        console.log(data);
+        setTrendingData(data.results)
+    };
+
+    //calling the function
+    useEffect(() => {
+        getTrending();
+    }, [])
+
+    return (
+        <>
+            <div>
+                <span className="pageTitle">Trending</span>
+                <div className="trending" >
+                    {trendingdata.map((value) => (
+                        <Content key={value.id}
+                            id={value.id}
+                            poster={value.poster_path}
+                        />   // unique key for children
+                    ))}
+                </div>
+
+            </div>
+        </>
+    )
+}
+
+export default Trending
+
+
+// const [movies, setMovies] = useState([])
 
     //  useEffect(()=> {
     //      const getTrending =async()=> {
@@ -55,51 +90,3 @@ function Trending() {
     //     )
 
     //  })
-
-
-    const [trendingdata, setTrendingData] = useState([])
-
-    // destructing the {data}
-    const getTrending = async () => {
-        const { data } = await axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_API_KEY}`
-        );
-
-        console.log(data);
-        setTrendingData(data.results)
-    };
-
-    //calling the function
-    useEffect(() => {
-        getTrending();
-    }, [])
-
-
-    return (
-        <>
-            <div>
-                <span className="pageTitle">Trending</span>
-                {/* <div style={{display: 'flex', flexFlow: 'row wrap'}}>
-            {trendingMap} */}
-                {/* </div> */}
-                <div className="trending" >
-                    {trendingdata.map((value)=>(
-                        <Content key={value.id}
-                                  id={value.id}
-                                  poster={value.poster_path}
-                                  title={value.title || value.name}
-                                  date={value.release_date || value.first_air_date}
-                                  media_type={value.media_type}
-                        
-                        
-                        
-                        />   // unique key for children
-                    ))}
-                </div>
-                
-</div>
-</>
-    )
-
-}
-
-export default Trending
