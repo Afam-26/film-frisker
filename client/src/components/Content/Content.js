@@ -32,15 +32,15 @@ const Content=({
              <InfoModal media_type={media_type} id={id}>
               
 
-            <img className="poster" src={`${baseURL}${pictureSize}${poster}`}/>
+            {/* <img className="poster" src={`${baseURL}${pictureSize}${poster}`}/>
             <span className="secTitle">
             {media_type ==="tv" ? "TV Series" : "Movie"}<br/>
-             <span></span>{date} 
+             <span></span>{date}  */}
 
         <div className="trendingimg">
             <img className="poster" src={`${baseURL}${pictureSize}${poster}`}/>
             <span className="secTitle">
-            {media_type === "Movie"}<br/>
+            {media_type ==="tv" ? "TV Series" : "Movie"}<br/>
             <span></span>{date}
 
             
@@ -50,7 +50,7 @@ const Content=({
 
 
             <p className="title">{title} </p>
-            
+            </div>
             
     
         </InfoModal>
