@@ -1,5 +1,9 @@
 
 import React from "react";
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import IconButton from '@material-ui/core/IconButton';
+import "../AddFavorite.js"
+import addFave from "../AddFavorite.js";
 
 import  "./Content.css";
 
@@ -20,8 +24,6 @@ const Content=({
 })=>{
     return(
         <div className="trendingimg">
-              
-
             <img className="poster" src={`${baseURL}${pictureSize}${poster}`}/>
             <span className="secTitle">
             {media_type ==="tv" ? "TV Series" : "Movie"}<br/>
@@ -31,7 +33,7 @@ const Content=({
 
 
 
-            <p classname="title">{title} </p>
+            <p className="title">{title} </p>
             
             
     
