@@ -27,6 +27,7 @@ Future versions to include
 genre sorting
 tv section
 click-to-view (on netflix, hulu, fandango, etc)
+more stuff
 
 ## Authors
 Nehreet Kaur, Afam Anekeh, Justin Bush, Elmer Hernandez, Gabriel Gonzales, Noe Rios 
