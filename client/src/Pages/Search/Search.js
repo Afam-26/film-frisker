@@ -4,14 +4,7 @@ import MovieContentPage from "../../components/MovieContentPage/MovieContentPage
 function Search() {
     const [searchValue, setSearchValue] = useState("");
     const [movieContent, setMovieContent] = useState([]);
-    // const darkTheme=createMuiTheme({
-    //     palette:{
-    //         type:“dark”,
-    //         primary:{
-    //             main:“#fff”
-    //         },
-    //     },
-    // });
+    
     useEffect(() => {
     }, [])
     const SEARCH_API = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&query=`;

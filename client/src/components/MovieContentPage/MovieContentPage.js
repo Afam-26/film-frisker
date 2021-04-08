@@ -7,7 +7,9 @@ import  "./MovieContentPage.css";
 import { Badge } from "@material-ui/core"
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import IconButton from '@material-ui/core/IconButton';
+
 import axios from "axios";
+
 
 
 
@@ -47,37 +49,17 @@ const MovieContentPage=({
       }
    
 
-    // return(
-    //     <div className="movieimg">
-        
-    //         <Badge badgeContent={vote_average}  color="primary"/>
-    //         <img className="movieposter" src={`${baseURL}${pictureSize}${poster}` }  onError={addDefault} />
-
-// }) => {
-    
-    // const addFave = () => {
-    //     console.log(id, poster, title, vote_average, date)
-    //     axios.post("/api/movies", {
-    //         id,
-    //         poster,
-    //         title,
-    //         vote_average,
-    //         date,
-        
-    //     // date,
-    //     }).then(response => {
-    //     console.log(response.data)
-    // })
-    // }
     return(
-        <div className="movieimg">
+
+
+<div className="movieimg">
             <Badge badgeContent={vote_average} color="primary"  />
             {/* favorite button goes here */}
-            <IconButton aria-label="Add to favorites" onClick={addFave} >
-                    <FavoriteIcon />
+            <IconButton aria-label="Add to favorites" >
+                    <FavoriteIcon onClick={addFave} className="heart"/>
             </IconButton>
             
-            <img className="movieposter" src={`${baseURL}${pictureSize}${poster}`}/>
+            <img className="movieposter" src={`${baseURL}${pictureSize}${poster}`}  onError={addDefault} />
 
 
             <span className="movieTitle">
@@ -89,6 +71,5 @@ const MovieContentPage=({
     )
 }
 
-export default MovieContentPage;
 
-//comment
+export default MovieContentPage
