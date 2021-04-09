@@ -1,27 +1,33 @@
 .trendingimg{
-    display:flex;
+display:flex;
 flex-direction:column;
-width:200px;
-/* height: 300px; */
-margin:15px;
-padding:4px;
-border-radius:20px ;
+color: white;
+width: 200px;
+height: 300px;
+margin: 10px;
+border-radius: 50px ;
 font-family:'Times New Roman', Times, serif;
-/* position:relative; */
-/* -moz-box-shadow: 0 0 10px #e9e8f1; 
--webkit-box-shadow: 0 0 10px #d6d6eb;
-box-shadow: 0 0 10px #ecedf3; */
+position: relative;
+box-shadow: 5px 5px 10px #13e997;
 }
 
 .trendingimg:hover{
     /* background-color:#ffe8d6; */
-    background-color: #a9b9c0;
-    color:#f2edf3;
+    background-color: #d2d6d4;
+    /* color:#f3eded; */
     /* text-transform: uppercase; */
 
     
 }
 
+.trending{
+    display:flex;
+    justify-content: space-between; 
+    /* margin-right: 5px; */
+    /* margin: 10px; */
+    padding: 20px;
+    flex-wrap:wrap;
+}
 
 .content_title{
     width:100%;
@@ -33,7 +39,7 @@ box-shadow: 0 0 10px #ecedf3; */
 
 }
 .poster{
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 

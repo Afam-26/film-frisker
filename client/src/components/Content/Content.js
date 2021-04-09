@@ -35,17 +35,12 @@ const Content=({
 
          <div className="trendingimg"> 
             <img className="poster" src={`${baseURL}${pictureSize}${poster}`}/>
-            <span className="secTitle">
+            {/* <span className="secTitle"> */}
             {media_type ==="tv" ? "TV Series" : "Movie"}<br/>
-            <span></span>{date}
+            {/* <span></span>{date}
+            </span> */}
 
-            
-            </span>
-
-
-
-
-            <p className="content_title">{title} </p>
+            {/* <p className="content_title">{title} </p> */}
              </div> 
             
     
