@@ -28,15 +28,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   paper: {
-    width: "70%",
-    height: "70%",
-    backgroundColor: "#495057",
-    border: "2px solid #adb5bd",
+    width: "50%",
+    height: "80%",
+    backgroundColor: "black",
+    border: "5px solid #adb5bd",
     borderRadius: "20px",
     color: "white",
     boxShadow: theme.shadows[5],
     padding: theme.spacing(1, 1, 3),
-
   },
 }));
 
@@ -131,7 +130,7 @@ export default function InfoModal({ children, media_type, id }) {
                 starticon={<YouTubeIcon/>}
                 // color="secondary"
                 target="_blank"
-                href={`https:/www.youtube.com/watch?v=${value}`}> Trailor</Button>
+                href={`https:/www.youtube.com/watch?v=${value}`}>View Trailor</Button>
               </div>
             </div>
 
