@@ -130,6 +130,7 @@ export default function InfoModal({ children, media_type, id }) {
                 starticon={<YouTubeIcon/>}
                 // color="secondary"
                 target="_blank"
+                style={{backgroundColor:" #13e997", borderRadius:"60px",color:"black", fontWeight:"bold" }}
                 href={`https:/www.youtube.com/watch?v=${value}`}>View Trailor</Button>
               </div>
             </div>

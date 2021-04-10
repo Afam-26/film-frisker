@@ -32,7 +32,7 @@ function Favourite() {
     return(
         <>
         
-                <span className="pageTitle">Favourite</span>
+                <span className="pageTitle">Favorite</span>
                 
 
 <div className="trending" >

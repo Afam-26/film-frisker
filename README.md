@@ -1,7 +1,8 @@
 # ABOUT
 
 Film frisker is an application for movie lovers to sort, store, and discover their favorite and soon-to-be favorite films and shows.
-IT'S an **MERN** Application. **(MONGO EXPRESS REACT NODE)**.All the folder structure is in **MVC**.
+IT'S an **MERN** Application. **(MONGO EXPRESS REACT NODE)**.All the folder structure is in **MVC**.This application is fully 
+responsive as well.
 
   [USER-STORY](#USER-STORY)
 
@@ -28,6 +29,10 @@ IT'S an **MERN** Application. **(MONGO EXPRESS REACT NODE)**.All the folder stru
  [GIT-HUB-REPOSITORY](#LINKS)
  
  [HEROKU--DEPLOYED-Application](#LINKS)
+
+ [Screenshots](#Screenshots)
+
+ [GIF-DEMO](#GIF-DEMO)
 
  [Authors](#Authors)
 
@@ -75,7 +80,7 @@ npm install
 ## TEXT-EDITOR
 VS-CODE
 
-## PROGRAMMING-LANGUAGEs
+## PROGRAMMING-LANGUAGES
 **REACT-JS**
 
 **CSS**
@@ -127,7 +132,7 @@ MongoDB
 
 [Badge](https://material-ui.com/components/badges/)
 
-[Modal-Ract-Transition-Group](https://material-ui.com/components/modal/#modal)
+[Modal-React-Transition-Group](https://material-ui.com/components/modal/#modal)
 
 [History-push](https://reactrouter.com/web/api/Hooks/usehistory)
 
@@ -142,6 +147,20 @@ MongoDB
 [GIT-HUB-REPOSITORY](https://github.com/Afam-26/final-project)
 
 [HEROKU-Deployed-Application](https://film-frisker.herokuapp.com/)
+
+## Screenshots
+![Screenshot1](client/src/assests/movImages/movie1.png)
+
+
+![Screenshot2](client/src/assests/movie2.png)
+
+
+![Screenshot3](client/src/assests/movie3.png)
+
+
+
+## GIF-DEMO
+![GIF-DEMO](client/src/assests/movie-friskers.gif)
 
 
 ## Roadmap
