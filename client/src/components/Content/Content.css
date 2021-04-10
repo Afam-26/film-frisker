@@ -58,8 +58,21 @@ box-shadow: 5px 5px 10px #13e997;
     font-weight: bolder;
 } */
 
-@media(max-width:500px){      /*less than*/
-    .trendingimg{
+/* @media(max-width:500px){      /*less than*/
+    /* .trendingimg{
         width:46px;
     }
+    } */ 
+
+
+    @media  screen and (max-width:768px){
+        .trendingimg{
+            display: flex;
+            width:200px;
+            flex-direction:column-reverse;
+            flex-wrap: nowrap;
+                                  
+                    justify-content: center;
+            
+        }
     }
